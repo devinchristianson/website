@@ -41,3 +41,6 @@ package-lock.json
 .jampack
 
 tmp
+
+# Cloudflare
+functions/**/*.js

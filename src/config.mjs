@@ -1,12 +1,12 @@
 export const SITE = {
-  name: "Qwind",
+  name: "Devin Christianson",
 
   title:
-    "Qwind — Free template for Qwik + Tailwind CSS to build your new website.",
+    "Devin Christianson",
   description:
-    "Qwind is a free and ready to start template to make your website using Qwik and Tailwind CSS.",
+    "Personal Website/Blog for Devin Christianson - Cybersecurity Analyst, Tool Builder, and Insfrastructure Nerd",
 
-  origin: "https://qwind.pages.dev",
+  origin: "https://devinchristianson.com",
   basePathname: "/",
   trailingSlash: true,
 };
