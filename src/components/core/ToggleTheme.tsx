@@ -1,4 +1,4 @@
-import { component$, useStore, useTask$ } from "@builder.io/qwik";
+import { component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 
 import { IconSun } from "~/components/icons/IconSun";
 import { IconMoon } from "../icons/IconMoon";
@@ -15,15 +15,10 @@ export default component$((props: ItemProps) => {
       undefined,
   });
 
-  useTask$(() => {
-    if  (!(typeof window !== "undefined" && window?.localStorage)) {
-      return;
-    }
-  
+  // Sync theme with theme loaded by the DarkThemeLauncher on page load
+  useVisibleTask$(() => {
     store.theme =
-      window.localStorage.theme === "dark" ||
-      (!("theme" in window.localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+      document.documentElement.classList.contains("dark")
         ? "dark"
         : "light";
   });
@@ -46,7 +41,7 @@ export default component$((props: ItemProps) => {
         }
       }}
     >
-      {store.theme == "dark" ? (
+      {store.theme == "light" ? (
         <IconMoon class={iconClass} />
       ) : (
         <IconSun class={iconClass} />

@@ -1,3 +1,4 @@
 export const DarkThemeLauncher = () => (
-  <script dangerouslySetInnerHTML={`if(localStorage.theme==="dark"){document.documentElement.classList.add("dark");}else if(typeof localStorage.theme==="undefined"){if(window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.classList.add("dark");}}`} />
+  // a bunch of shenanigans to check if the user prefers a light theme, otherwise set the theme to dark
+  <script dangerouslySetInnerHTML={`if(!(localStorage.theme==="light" || window.matchMedia("(prefers-color-scheme: light)").matches)){document.documentElement.classList.add("dark");}`} />
 );
