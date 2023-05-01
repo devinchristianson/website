@@ -4,12 +4,8 @@ const Endpoint = '/datahelper/event';
 
 const ScriptWithoutExtension = ScriptName.replace('.js', '')
 
-addEventListener('fetch', event => {
-    event.passThroughOnException();
-    event.respondWith(handleRequest(event));
-})
 
-async function handleRequest(event) {
+export async function onRequest(event) {
   const pathname = new URL(event.request.url).pathname
   const [baseUri, ...extensions] = pathname.split('.')
 
