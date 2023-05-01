@@ -30,6 +30,7 @@ export default component$(() => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <script defer data-domain="devinchristianson.com" data-api="/datahelper/event" src="/datahelper/script.js"></script>
         <RouterHead />
         <DarkThemeLauncher />
       </head>
