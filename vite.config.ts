@@ -12,7 +12,6 @@ export default defineConfig(() => {
   return {
     plugins: [
       qwikCity({
-        basePathname: SITE.basePathname,
         trailingSlash: SITE.trailingSlash,
       }),
       qwikVite(),
