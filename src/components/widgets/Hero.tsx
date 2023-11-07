@@ -1,9 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-// @ts-ignore
-import srcsetAvif from "~/assets/images/profile_pic.jpg?w=400;401&avif&srcset";
-// @ts-ignore
-import srcsetWebp from "~/assets/images/profile_pic.jpg?w=400;900&webp&srcset";
+import ProfilePic from "~/assets/images/profile_pic.jpg?jsx";
 
 export default component$(() => {
   return (
@@ -36,19 +33,7 @@ export default component$(() => {
           </div>
           <div class="block md:flex items-center flex-1">
             <div class="relative m-auto max-w-4xl">
-              <picture>
-                <source srcSet={srcsetAvif} type="image/avif" />
-                <source srcSet={srcsetWebp} type="image/webp" />
-                <img 
-                  style={{backgroundImage: `url(${srcsetWebp})`}}
-                  width={1000}
-                  height={1250}
-                  class="mx-auto w-full rounded-md md:h-full drop-shadow-2xl bg-gray-400 dark:bg-slate-700"
-                  alt="Qwind Hero Image (Cool dog)"
-                  loading="eager"
-                  decoding="async"
-                />
-              </picture>
+              <ProfilePic/>
             </div>
           </div>
         </div>
