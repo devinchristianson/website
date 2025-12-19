@@ -29,8 +29,8 @@ export async function generateRSS() {
     posts.forEach((p)=>{
         feed.addItem({
             title: p.title,
-            id: `${SITE.origin}/block/${p.slug}`,
-            link: `${SITE.origin}/block/${p.slug}`,
+            id: `${SITE.origin}/blog/${p.slug}`,
+            link: `${SITE.origin}/blog/${p.slug}`,
             description: p.excerpt,
             content: p.content,
             author: [
