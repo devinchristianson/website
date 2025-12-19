@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-11-04T00:00:00Z
-title: Potential alternative SSH stratedy for cyber defense competitions
-excerpt: Dynamic SSH strategy for easier key rotation and minimal server reconfiguration 
+title: Potential alternative SSH strategy for cyber defense competitions
+excerpt: Dynamic SSH strategy for easier key rotation and minimal server reconfiguration
 tags:
   - ssh
   - blue-team
