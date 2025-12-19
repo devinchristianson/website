@@ -1,6 +1,6 @@
 ---
 publishDate: 2023-11-04T00:00:00Z
-title: Leveraging containerSSH and asciinema to build a linux lab platform (Part 1)
+title: Leveraging ContainerSSH to build a linux lab platform (ssh-lab-factory Part 1)
 excerpt: Building a lightweight SSH container provisioning system for labs and interactive demos
 tags:
   - containerSSH
@@ -11,7 +11,7 @@ tags:
   - blog
 ---
 
-In my free time, I often assist the cybersecurity team of my alma mater university (University of Maine, Orono) in running practice competitions, and previously have assisted with labs and done interactive demos.
+In my free time, I often assist the cybersecurity team [UMCST](https://umcst.maine.edu) of my alma mater university (University of Maine, Orono) in running practice competitions, and previously have assisted with labs and done interactive demos.
 
 When I ran across the [containerSSH](https://containerssh.io/) I thought it could be fun to build some lightweight supporting microservices. My initial goal was to support multiple environments (multiple container configurations), and handle SSH authentication in some way that would minimize friction for users. I quickly came up with the idea for using a similar mechanism that is common to graphical linux installers - pull public keys from GitHub!
 
@@ -49,4 +49,4 @@ auth.pubkey.success if {
 ```
 
 
-This configuration allows a user to login via containerSSH if the username and SSH key provided matches one of the keys for that username in Github. While this may be an ideal configuration for a publically available lab environment, in most cases you will want to provide a user whitelist, and be able to proxy users to a number of different container configurations. These features will be tackled in a later post.
+This configuration servers as a great minimal POC, allowing a user to login via containerSSH if the username and SSH key provided matches one of the keys for that username in Github. In later posts, we will expand on this POC to add support for a user whitelist, and add a framework of microservices to dynamic configuration of arbitrary container configurations.
