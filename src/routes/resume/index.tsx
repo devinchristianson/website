@@ -3,10 +3,10 @@ import { IconOpenNew } from "~/components/icons/IconOpenNew";
 
 export default component$(() => {
     return (
-        <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-3xl">
+        <section class="px-6 sm:px-6 mx-auto max-w-3xl">
             <header>
                 <h1
-                    class="flex gap-[.5em] content-center justify-center text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-8 md:mb-16 font-heading"
+                    class="flex gap-[.5em] content-center justify-center text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 md:mb-8 font-heading"
                 >
                     Resume <a class="content-center" href="https://docs.google.com/document/d/1fA914RbVw8dSnu54MOgBmPQbXrFRIChvCPrRrYO7_o0/edit?usp=sharing" target="_blank"><IconOpenNew class="w-10 h-10" /></a>
                 </h1>
