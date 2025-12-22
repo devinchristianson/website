@@ -1,5 +1,5 @@
 # Menu
 
-## [Resume](https://rxresu.me/devinchristianson/base)
+## [Resume](/resume)
 
 ## [Blog](/blog)

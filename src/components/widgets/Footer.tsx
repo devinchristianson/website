@@ -45,7 +45,7 @@ export default component$(() => {
               {" "}
               Qwind Template
             </a>{" "}
-            · All rights reserved.
+            · Icons by <a href="https://icons8.com/" class="text-secondary-700 hover:underline dark:text-gray-200">Icons8</a>
           </div>
         </div>
       </div>
