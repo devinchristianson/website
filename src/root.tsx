@@ -26,7 +26,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
-        <script defer data-domain="devinchristianson.com" data-api="/datahelper/event" src="/datahelper/helper.js"></script>
+        {/*<script defer data-domain="devinchristianson.com" data-api="/datahelper/event" src="/datahelper/helper.js"></script>*/}
         <RouterHead />
         <DarkThemeLauncher />
       </head>
