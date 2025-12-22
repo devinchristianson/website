@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import ProfilePic from "~/assets/images/profile_pic.jpg?jsx";
+import profilePic from "~/assets/images/profile_pic.jpg";
 
 export default component$(() => {
   return (
@@ -33,7 +33,7 @@ export default component$(() => {
           </div>
           <div class="block md:flex items-center flex-1">
             <div class="relative m-auto max-w-4xl">
-              <ProfilePic/>
+              <img src={profilePic}/>
             </div>
           </div>
         </div>
